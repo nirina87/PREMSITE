@@ -1,0 +1,277 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 févr. 2018, 12:40:50
+    Author     : Nirina
+*/
+.body{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    height: 405px;
+    background-image: url("../images/bg-header.jpg");
+    background-position: center;
+    padding-top: 50px;
+
+}
+.nav {
+    left:50%;
+    margin-left:-150px;
+    top:50px;
+    position:absolute;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background:#fff;
+}
+.dropdown {
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+    width:300px;    
+}
+.dropdown-menu>li>a {
+    color:#428bca;
+}
+.dropdown ul.dropdown-menu {
+    border-radius:4px;
+    box-shadow:none;
+    margin-top:20px;
+    width:300px;
+}
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}
+.list-services{
+    min-height: 410px;
+    background-color: #0191c0;
+    margin: 0 auto !important;
+    padding-top: 20px
+}
+.list-services .itemsrv div{
+    width: 100%;
+    color: #fff;
+    text-align: center
+    
+}
+.tittre-services{
+    margin: 20px auto
+}
+.svg-inline--fa{
+    width: 100px !important;
+    height: 100px
+}
+.img-prst{
+    text-align: center;
+    vertical-align: middle
+}
+.subtitle h2 {
+    text-transform: uppercase;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 50px;
+    color: #273b8d;
+}
+.prst-txt{
+    font-size: 26px;
+    color: #61c6eb;
+    letter-spacing: 0px;
+    font-style: italic;
+}
+.prst-txt .svg-inline--fa{
+    width: 50px !important
+}
+.prst-txt p {
+    text-align: justify;
+}
+.engmnt-txt {
+    font-size: 30px;
+    padding: 100px;
+    color: #7b8686;
+}
+.img-prst img {
+    width: 100%;
+}
+section.container-fluid {
+    padding: 0;
+}
+.container-logo-menu{
+    margin: 0 auto !important
+}
+.img-engmnt{
+    text-align: center
+}
+.type-engment li span{
+    color: #000;
+    font-weight: blod !important
+}
+.google-map{
+    min-height: 500px
+}
+.row.foot{
+    background-color: #6e6e6e
+}
+.foot .engmnt-txt {
+    font-size: 30px;
+    padding: 100px;
+    color: #fff;
+}
+footer.container-fluid,
+footer .container-fluid,
+footer .container,
+footer .colmap{
+    padding: 0;
+        margin: 0
+}
+
+
+/* NAVIGATION */
+nav {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0px 0px 0px #fff;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: none
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 5px;
+    top: 65px;
+    text-shadow: none;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
